@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#grad)" />
+  <!-- Stylized Air Quality Wave & Wind -->
+  <path d="M120 200 C 180 160, 240 240, 320 200 C 360 180, 390 190, 400 200" stroke="#ffffff" stroke-width="28" stroke-linecap="round" />
+  <path d="M100 260 C 160 220, 220 300, 300 260 C 350 235, 380 250, 420 260" stroke="#ffffff" stroke-width="28" stroke-linecap="round" opacity="0.9" />
+  <path d="M140 320 C 190 290, 240 350, 310 320 C 340 305, 360 315, 380 320" stroke="#ffffff" stroke-width="24" stroke-linecap="round" opacity="0.75" />
+  <!-- Sparkle dot / particle -->
+  <circle cx="370" cy="140" r="14" fill="#ffffff" />
+  <circle cx="160" cy="140" r="10" fill="#ffffff" opacity="0.8" />
+</svg>

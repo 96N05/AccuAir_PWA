@@ -1,0 +1,6 @@
+{
+  "name": "AccuAir - Minimal Air Quality & Health Widget",
+  "description": "Personal air quality and outdoor health companion with hourly updates, activity forecasts, and offline caching.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
