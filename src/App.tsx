@@ -223,7 +223,7 @@ export default function App() {
         </div>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-2">
+        <div className="header-actions flex items-center gap-1 sm:gap-2 shrink-0">
           {/* In-App PWA Install Component */}
           <PWAInstallButton />
 
