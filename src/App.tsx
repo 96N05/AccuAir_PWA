@@ -224,9 +224,7 @@ export default function App() {
 
         {/* Action Controls */}
         <div className="header-actions flex items-center gap-1 sm:gap-2 shrink-0">
-          {/* In-App PWA Install Component */}
-          <PWAInstallButton />
-
+          
           {/* Quick Temperature Unit Toggle */}
           <div className="flex items-center p-0.5 bg-neutral-100 dark:bg-neutral-800 rounded-lg text-xs font-mono-numbers">
             <button
