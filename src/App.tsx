@@ -690,8 +690,7 @@ export default function App() {
               return (
                 <div
                   key={act.id}
-                  className="p-4 rounded-xl border border-neutral-200/80 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-850/50 hover:bg-neutral-50 dark:hover:bg-neutral-800/70 transition-colors flex flex-col justify-between"
-                >
+                  className="p-4 rounded-xl border border-neutral-200/80 dark:border-neutral-800 bg-white dark:bg-neutral-950/70 hover:bg-neutral-50/80 dark:hover:bg-neutral-900/80 transition-colors flex flex-col justify-between"                >
                   <div>
                     {/* Activity Title & Rating Pill */}
                     <div className="flex items-center justify-between gap-2 mb-2">
@@ -712,7 +711,7 @@ export default function App() {
                     </div>
 
                     {/* Diagnostic Advice */}
-                    <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed mt-2">
+                    <p className="text-xs text-neutral-600 dark:text-neutral-300 leading-relaxed mt-2">
                       {isExpanded || act.text.length <= 60
                         ? act.text
                         : `${act.text.slice(0, 56).trimEnd()}...`}
