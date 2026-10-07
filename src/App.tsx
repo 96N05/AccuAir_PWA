@@ -8,7 +8,6 @@ import { useWeatherForecast } from './hooks/useWeatherForecast';
 import { LocationModal } from './components/LocationModal';
 import { SettingsModal } from './components/SettingsModal';
 import { EmbedCodeModal } from './components/EmbedCodeModal';
-import { PWAInstallButton } from './components/PWAInstallButton';
 import { AccuAirWidget } from './components/AccuAirWidget';
 import { getStoredUnit, saveStoredUnit } from './services/cache';
 import { HealthActivityGroup, HealthActivityIndex } from './types/weather';
