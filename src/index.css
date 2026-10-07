@@ -12,3 +12,39 @@
   font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-variant-numeric: tabular-nums;
 }
+
+/* =========================================================
+   Mobile Top Bar Media Query: Prevents horizontal overflow 
+   and keeps all content perfectly centered on mobile devices
+   ========================================================= */
+@media (max-width: 640px) {
+  /* Prevent any horizontal page blowout */
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+
+  /* Keep the header within the screen viewport */
+  header {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Tighten spacing between action buttons on mobile */
+  header .header-actions {
+    gap: 0.25rem !important;
+  }
+
+  /* On mobile screens, hide the long text label inside the install button, 
+     keeping only the clean download icon button */
+  header .pwa-install-btn span {
+    display: none !important;
+  }
+
+  header .pwa-install-btn {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
