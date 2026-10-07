@@ -33,6 +33,7 @@ import {
   Compass,
   Code,
   Share2,
+  Github,
 } from 'lucide-react';
 
 export default function App() {
@@ -203,20 +204,28 @@ export default function App() {
       <header className="sticky top-0 z-40 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md border-b border-neutral-200/80 dark:border-neutral-800 px-4 sm:px-8 py-3 flex items-center justify-between gap-4">
         {/* Brand Area */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-teal-700 to-teal-500 flex items-center justify-center text-white shadow-xs">
+          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-teal-700 to-teal-500 flex items-center justify-center text-white shadow-xs shrink-0">
             <Wind className="w-4 h-4" />
           </div>
+
           <div>
             <div className="flex items-center gap-2">
               <span className="font-bold text-base tracking-tight text-neutral-950 dark:text-neutral-50">
                 AccuAir
               </span>
-              <span className="text-[10px] uppercase font-semibold tracking-wider px-1.5 py-0.5 rounded-full bg-teal-50 text-teal-700 dark:bg-teal-950/80 dark:text-teal-300 border border-teal-200/80 dark:border-teal-800">
-                Companion
-              </span>
+              <a
+                href="https://github.com/96N05"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-neutral-100 hover:bg-neutral-200/80 dark:bg-neutral-800 dark:hover:bg-neutral-700/80 text-neutral-700 dark:text-neutral-300 border border-neutral-200/80 dark:border-neutral-700 transition-colors shadow-2xs group"
+                title="View Son Nguyen on GitHub"
+              >
+                <Github className="w-3 h-3 text-neutral-900 dark:text-neutral-100 group-hover:scale-110 transition-transform" />
+                <span className="font-semibold text-neutral-900 dark:text-neutral-100">Son Nguyen</span>
+              </a>
             </div>
             <p className="text-[11px] text-neutral-500 dark:text-neutral-400 hidden sm:block">
-              Personal Air Quality & Outdoor Health
+              Personal Air Quality &amp; Outdoor Health
             </p>
           </div>
         </div>
@@ -288,7 +297,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main Companion Body */}
+      {/* Main Body */}
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-8 py-6 space-y-6">
         {/* User-Controlled Location Hub & Saved Places Bar */}
         <section className="bg-white dark:bg-neutral-900 border border-neutral-200/90 dark:border-neutral-800 rounded-2xl p-4 sm:p-5 shadow-xs">
@@ -735,7 +744,16 @@ export default function App() {
       <footer className="mt-auto border-t border-neutral-200/80 dark:border-neutral-800 bg-white/50 dark:bg-neutral-900/50 py-6 px-4 sm:px-8 text-xs text-neutral-500 dark:text-neutral-400">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <span className="font-semibold text-neutral-800 dark:text-neutral-200">AccuAir Companion</span>
+            <span className="font-semibold text-neutral-800 dark:text-neutral-200">AccuAir</span>
+            <span>·</span>
+            <a
+              href="https://github.com/96N05"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-neutral-800 dark:hover:text-neutral-200 transition-colors font-medium"
+            >
+              Son Nguyen
+            </a>
             <span>·</span>
             <span>Hourly auto-refresh active</span>
           </div>

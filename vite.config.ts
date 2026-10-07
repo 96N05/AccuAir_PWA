@@ -16,7 +16,7 @@ export default defineConfig(() => {
           id: '/',
           name: 'AccuAir - Air Quality & Outdoor Health',
           short_name: 'AccuAir',
-          description: 'Personal air quality and outdoor health companion with hourly updates, activity forecasts, and offline support.',
+          description: 'Personal air quality and outdoor health with hourly updates, activity forecasts, and offline support.',
           theme_color: '#0f766e',
           background_color: '#fafafa',
           display: 'standalone',
@@ -90,6 +90,7 @@ export default defineConfig(() => {
     server: {
       host: '0.0.0.0',
       port: 3000,
+      allowedHosts: true as const,
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modify—file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
